@@ -52,6 +52,11 @@ class MyCartViewController: UIViewController {
     }
     
     @IBAction func onTapCallVendor(_ sender: UIButton) {
+        let product = myCartProducts[sender.tag]
+        guard let phoneNumber = product.phoneNumber, let number = URL(string: "tel://" + phoneNumber) else {
+            return
+        }
+        UIApplication.shared.canOpenURL(number)
     }
     
     @IBAction func removeCartTap(_ sender: UIButton) {
