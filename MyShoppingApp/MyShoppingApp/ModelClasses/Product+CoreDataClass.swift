@@ -49,4 +49,7 @@ public class Product: NSManagedObject {
         phoneNumber = payload[PayloadKeys.phoneNumber] as? String
     }
 
+    func updateAddToCart(withValue value: Bool) {
+        isAddedToCart = value
+    }
 }

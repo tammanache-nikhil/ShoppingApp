@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B3221371FAE6619003C3FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221361FAE6619003C3FFA /* AppDelegate.swift */; };
-		1B3221391FAE6619003C3FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221381FAE6619003C3FFA /* ViewController.swift */; };
 		1B32213C1FAE6619003C3FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B32213A1FAE6619003C3FFA /* Main.storyboard */; };
 		1B32213F1FAE6619003C3FFA /* MyShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B32213D1FAE6619003C3FFA /* MyShoppingApp.xcdatamodeld */; };
 		1B3221411FAE6619003C3FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3221401FAE6619003C3FFA /* Assets.xcassets */; };
@@ -24,12 +23,15 @@
 		1B32215E1FAF3ED3003C3FFA /* URLRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221561FAF3ECE003C3FFA /* URLRequestManager.swift */; };
 		1B32215F1FAF3ED3003C3FFA /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221571FAF3ECF003C3FFA /* NetworkOperation.swift */; };
 		1B3221601FAF3ED3003C3FFA /* NSObject+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */; };
+		1B3221681FAFBD2B003C3FFA /* LazyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221671FAFBD2B003C3FFA /* LazyImage.swift */; };
+		1B32216A1FAFBE1D003C3FFA /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221691FAFBE1D003C3FFA /* UIView+Helper.swift */; };
+		1B32216C1FAFBE4E003C3FFA /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32216B1FAFBE4E003C3FFA /* CartTableViewCell.swift */; };
+		1B32216E1FAFBE64003C3FFA /* MyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32216D1FAFBE64003C3FFA /* MyCartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B3221331FAE6619003C3FFA /* MyShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3221361FAE6619003C3FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B3221381FAE6619003C3FFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B32213B1FAE6619003C3FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B32213E1FAE6619003C3FFA /* MyShoppingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyShoppingApp.xcdatamodel; sourceTree = "<group>"; };
 		1B3221401FAE6619003C3FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		1B3221561FAF3ECE003C3FFA /* URLRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestManager.swift; sourceTree = "<group>"; };
 		1B3221571FAF3ECF003C3FFA /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helper.swift"; sourceTree = "<group>"; };
+		1B3221671FAFBD2B003C3FFA /* LazyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyImage.swift; sourceTree = "<group>"; };
+		1B3221691FAFBE1D003C3FFA /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		1B32216B1FAFBE4E003C3FFA /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		1B32216D1FAFBE64003C3FFA /* MyCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				1B3221361FAE6619003C3FFA /* AppDelegate.swift */,
-				1B3221381FAE6619003C3FFA /* ViewController.swift */,
-				1B32214D1FAF3EC1003C3FFA /* DataBaseManager.swift */,
-				1B3221541FAF3ECC003C3FFA /* ProductCollectionViewCell.swift */,
-				1B3221551FAF3ECD003C3FFA /* ProductListViewController.swift */,
+				1B32216F1FAFBEB8003C3FFA /* Product */,
+				1B3221701FAFBECA003C3FFA /* Cart */,
+				1B3221661FAFBD2B003C3FFA /* LazyImageLibrary */,
 				1B3221651FAF41D5003C3FFA /* Constant */,
 				1B3221611FAF4175003C3FFA /* NetworkClasses */,
 				1B3221641FAF41A5003C3FFA /* DatabaseManager */,
@@ -121,6 +126,7 @@
 			children = (
 				1B32214C1FAF3EB7003C3FFA /* CustomError.swift */,
 				1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */,
+				1B3221691FAFBE1D003C3FFA /* UIView+Helper.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 		1B3221641FAF41A5003C3FFA /* DatabaseManager */ = {
 			isa = PBXGroup;
 			children = (
+				1B32214D1FAF3EC1003C3FFA /* DataBaseManager.swift */,
 			);
 			path = DatabaseManager;
 			sourceTree = "<group>";
@@ -138,6 +145,32 @@
 				1B32214B1FAF3EAC003C3FFA /* Constants.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		1B3221661FAFBD2B003C3FFA /* LazyImageLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				1B3221671FAFBD2B003C3FFA /* LazyImage.swift */,
+			);
+			path = LazyImageLibrary;
+			sourceTree = "<group>";
+		};
+		1B32216F1FAFBEB8003C3FFA /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				1B3221541FAF3ECC003C3FFA /* ProductCollectionViewCell.swift */,
+				1B3221551FAF3ECD003C3FFA /* ProductListViewController.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		1B3221701FAFBECA003C3FFA /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				1B32216B1FAFBE4E003C3FFA /* CartTableViewCell.swift */,
+				1B32216D1FAFBE64003C3FFA /* MyCartViewController.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,11 +247,14 @@
 			files = (
 				1B32214F1FAF3EC2003C3FFA /* CustomError.swift in Sources */,
 				1B3221601FAF3ED3003C3FFA /* NSObject+Helper.swift in Sources */,
+				1B32216A1FAFBE1D003C3FFA /* UIView+Helper.swift in Sources */,
 				1B32215E1FAF3ED3003C3FFA /* URLRequestManager.swift in Sources */,
-				1B3221391FAE6619003C3FFA /* ViewController.swift in Sources */,
 				1B32215C1FAF3ED3003C3FFA /* ProductCollectionViewCell.swift in Sources */,
+				1B3221681FAFBD2B003C3FFA /* LazyImage.swift in Sources */,
 				1B3221371FAE6619003C3FFA /* AppDelegate.swift in Sources */,
+				1B32216C1FAFBE4E003C3FFA /* CartTableViewCell.swift in Sources */,
 				1B3221591FAF3ED3003C3FFA /* Product+CoreDataProperties.swift in Sources */,
+				1B32216E1FAFBE64003C3FFA /* MyCartViewController.swift in Sources */,
 				1B32215F1FAF3ED3003C3FFA /* NetworkOperation.swift in Sources */,
 				1B32215A1FAF3ED3003C3FFA /* NetworkManager.swift in Sources */,
 				1B32215B1FAF3ED3003C3FFA /* Product+CoreDataClass.swift in Sources */,

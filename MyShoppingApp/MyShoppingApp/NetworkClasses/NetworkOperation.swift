@@ -30,7 +30,7 @@ class NetworkOperation: Operation, URLSessionDataDelegate {
     override func main() {
         self.makeAPICallForRequestType(urlRequestManager: self.urlRequestManager, completion: {(payload, responseHeaders, error ) in
             if error != nil {
-                self.failureBlock?(CustomError.dcError(networkError: error!))
+                self.failureBlock?(CustomError.myError(networkError: error!))
             } else {
                 do {
                     let response = responseHeaders as? HTTPURLResponse
@@ -41,10 +41,10 @@ class NetworkOperation: Operation, URLSessionDataDelegate {
                     } else {
                         let responseMsg = parsedJson as? [AnyHashable : Any]
                         let err = NSError(domain: "HttpResponseErrorDomain", code: (response?.statusCode)!, userInfo: responseMsg as? [String : Any])
-                        self.failureBlock?(CustomError.dcError(networkError: err))
+                        self.failureBlock?(CustomError.myError(networkError: err))
                     }
                 } catch let exception {
-                    self.failureBlock?(CustomError.dcError(networkError: exception))
+                    self.failureBlock?(CustomError.myError(networkError: exception))
                 }
             }
         })

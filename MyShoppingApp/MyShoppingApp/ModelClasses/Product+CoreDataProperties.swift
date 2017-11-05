@@ -2,8 +2,9 @@
 //  Product+CoreDataProperties.swift
 //  MyShoppingApp
 //
-//  Created by Nikhil Tammanache on 05/11/17.
+//  Created by Nikhil Tammanache on 06/11/17.
 //  Copyright © 2017 Nikhil. All rights reserved.
+//
 //
 
 import Foundation
@@ -22,5 +23,6 @@ extension Product {
     @NSManaged public var vendorAddress: String?
     @NSManaged public var imageURL: String?
     @NSManaged public var phoneNumber: String?
+    @NSManaged public var isAddedToCart: Bool
 
 }
