@@ -13,6 +13,17 @@
 		1B32213F1FAE6619003C3FFA /* MyShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B32213D1FAE6619003C3FFA /* MyShoppingApp.xcdatamodeld */; };
 		1B3221411FAE6619003C3FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3221401FAE6619003C3FFA /* Assets.xcassets */; };
 		1B3221441FAE6619003C3FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3221421FAE6619003C3FFA /* LaunchScreen.storyboard */; };
+		1B32214E1FAF3EC1003C3FFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32214B1FAF3EAC003C3FFA /* Constants.swift */; };
+		1B32214F1FAF3EC2003C3FFA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32214C1FAF3EB7003C3FFA /* CustomError.swift */; };
+		1B3221501FAF3EC2003C3FFA /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32214D1FAF3EC1003C3FFA /* DataBaseManager.swift */; };
+		1B3221591FAF3ED3003C3FFA /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221511FAF3EC6003C3FFA /* Product+CoreDataProperties.swift */; };
+		1B32215A1FAF3ED3003C3FFA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221521FAF3EC9003C3FFA /* NetworkManager.swift */; };
+		1B32215B1FAF3ED3003C3FFA /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221531FAF3ECB003C3FFA /* Product+CoreDataClass.swift */; };
+		1B32215C1FAF3ED3003C3FFA /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221541FAF3ECC003C3FFA /* ProductCollectionViewCell.swift */; };
+		1B32215D1FAF3ED3003C3FFA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221551FAF3ECD003C3FFA /* ProductListViewController.swift */; };
+		1B32215E1FAF3ED3003C3FFA /* URLRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221561FAF3ECE003C3FFA /* URLRequestManager.swift */; };
+		1B32215F1FAF3ED3003C3FFA /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221571FAF3ECF003C3FFA /* NetworkOperation.swift */; };
+		1B3221601FAF3ED3003C3FFA /* NSObject+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		1B3221401FAE6619003C3FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3221431FAE6619003C3FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3221451FAE6619003C3FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B32214B1FAF3EAC003C3FFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B32214C1FAF3EB7003C3FFA /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		1B32214D1FAF3EC1003C3FFA /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		1B3221511FAF3EC6003C3FFA /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1B3221521FAF3EC9003C3FFA /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1B3221531FAF3ECB003C3FFA /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1B3221541FAF3ECC003C3FFA /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B3221551FAF3ECD003C3FFA /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		1B3221561FAF3ECE003C3FFA /* URLRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestManager.swift; sourceTree = "<group>"; };
+		1B3221571FAF3ECF003C3FFA /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,14 @@
 			children = (
 				1B3221361FAE6619003C3FFA /* AppDelegate.swift */,
 				1B3221381FAE6619003C3FFA /* ViewController.swift */,
+				1B32214D1FAF3EC1003C3FFA /* DataBaseManager.swift */,
+				1B3221541FAF3ECC003C3FFA /* ProductCollectionViewCell.swift */,
+				1B3221551FAF3ECD003C3FFA /* ProductListViewController.swift */,
+				1B3221651FAF41D5003C3FFA /* Constant */,
+				1B3221611FAF4175003C3FFA /* NetworkClasses */,
+				1B3221641FAF41A5003C3FFA /* DatabaseManager */,
+				1B3221631FAF4190003C3FFA /* HelperClasses */,
+				1B3221621FAF4183003C3FFA /* ModelClasses */,
 				1B32213A1FAE6619003C3FFA /* Main.storyboard */,
 				1B3221401FAE6619003C3FFA /* Assets.xcassets */,
 				1B3221421FAE6619003C3FFA /* LaunchScreen.storyboard */,
@@ -65,6 +95,49 @@
 				1B32213D1FAE6619003C3FFA /* MyShoppingApp.xcdatamodeld */,
 			);
 			path = MyShoppingApp;
+			sourceTree = "<group>";
+		};
+		1B3221611FAF4175003C3FFA /* NetworkClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1B3221521FAF3EC9003C3FFA /* NetworkManager.swift */,
+				1B3221571FAF3ECF003C3FFA /* NetworkOperation.swift */,
+				1B3221561FAF3ECE003C3FFA /* URLRequestManager.swift */,
+			);
+			path = NetworkClasses;
+			sourceTree = "<group>";
+		};
+		1B3221621FAF4183003C3FFA /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1B3221531FAF3ECB003C3FFA /* Product+CoreDataClass.swift */,
+				1B3221511FAF3EC6003C3FFA /* Product+CoreDataProperties.swift */,
+			);
+			path = ModelClasses;
+			sourceTree = "<group>";
+		};
+		1B3221631FAF4190003C3FFA /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1B32214C1FAF3EB7003C3FFA /* CustomError.swift */,
+				1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		1B3221641FAF41A5003C3FFA /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		1B3221651FAF41D5003C3FFA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1B32214B1FAF3EAC003C3FFA /* Constants.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +212,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B32214F1FAF3EC2003C3FFA /* CustomError.swift in Sources */,
+				1B3221601FAF3ED3003C3FFA /* NSObject+Helper.swift in Sources */,
+				1B32215E1FAF3ED3003C3FFA /* URLRequestManager.swift in Sources */,
 				1B3221391FAE6619003C3FFA /* ViewController.swift in Sources */,
+				1B32215C1FAF3ED3003C3FFA /* ProductCollectionViewCell.swift in Sources */,
 				1B3221371FAE6619003C3FFA /* AppDelegate.swift in Sources */,
+				1B3221591FAF3ED3003C3FFA /* Product+CoreDataProperties.swift in Sources */,
+				1B32215F1FAF3ED3003C3FFA /* NetworkOperation.swift in Sources */,
+				1B32215A1FAF3ED3003C3FFA /* NetworkManager.swift in Sources */,
+				1B32215B1FAF3ED3003C3FFA /* Product+CoreDataClass.swift in Sources */,
 				1B32213F1FAE6619003C3FFA /* MyShoppingApp.xcdatamodeld in Sources */,
+				1B3221501FAF3EC2003C3FFA /* DataBaseManager.swift in Sources */,
+				1B32215D1FAF3ED3003C3FFA /* ProductListViewController.swift in Sources */,
+				1B32214E1FAF3EC1003C3FFA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
