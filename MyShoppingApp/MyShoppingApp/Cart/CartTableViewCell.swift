@@ -35,6 +35,7 @@ class CartTableViewCell: UITableViewCell {
         vendorNameLabel.text = product.vendorName
         vendorAddressLabel.text = product.vendorAddress
         removeFromCartButton.tag = indexPath.row
+        callVendorButton.tag = indexPath.row
     }
 
 }
