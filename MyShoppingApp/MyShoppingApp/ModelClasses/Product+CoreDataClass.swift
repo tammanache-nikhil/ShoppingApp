@@ -49,7 +49,12 @@ public class Product: NSManagedObject {
         phoneNumber = payload[PayloadKeys.phoneNumber] as? String
     }
 
+    
+    /// Use below method to add a product into cart.
+    ///
+    /// - Parameter value: boolean value.
     func updateAddToCart(withValue value: Bool) {
         isAddedToCart = value
+        DatabaseManager.shared.saveContext(context: self.managedObjectContext!)
     }
 }

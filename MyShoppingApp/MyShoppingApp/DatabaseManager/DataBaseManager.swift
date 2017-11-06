@@ -47,7 +47,7 @@ final class DatabaseManager {
                  * The store could not be migrated to the current model version.
                  Check the error message to determine what the actual problem was.
                  */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                print("Unresolved error \(error), \(error.userInfo)")
             }
         })
         return container
@@ -55,7 +55,7 @@ final class DatabaseManager {
     
     // MARK: - Core Data Saving support
     
-    func saveContext () {
+    private func saveContext() {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -64,11 +64,43 @@ final class DatabaseManager {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                print("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
     }
     
+    /**
+     This method save BackGround Context
+     - Parameter context: The context to be saved.
+     */
+    private func saveBackgroundContext(_ context: NSManagedObjectContext) {
+        if !context.hasChanges {
+            return
+        }
+        context.performAndWait { [weak self] in
+            do {
+                try context.save()
+                if let weakSelf = self, let parentContext = context.parent {
+                    weakSelf.saveContext(context: parentContext)
+                } else {
+                    return
+                }
+            } catch {
+                print("Error occured while saving background context")
+            }
+        }
+    }
+    
+    /**
+     Saves the context which is passed in calling method
+     */
+    func saveContext(context: NSManagedObjectContext) {
+        if context == self.mainContext {
+            self.saveContext()
+        } else {
+            self.saveBackgroundContext(context)
+        }
+    }
     /**
      This variable returns main context according to availability
      */
@@ -83,6 +115,7 @@ final class DatabaseManager {
      */
     public func childContext() -> NSManagedObjectContext {
         let newThreadContext = self.persistentContainer.newBackgroundContext()
+        newThreadContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         return newThreadContext
     }
     
