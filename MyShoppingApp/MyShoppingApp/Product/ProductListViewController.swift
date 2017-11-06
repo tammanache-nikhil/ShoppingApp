@@ -42,8 +42,7 @@ class ProductListViewController: UIViewController {
                     for productPayload in allProducts {
                         Product.createOrUpdate(inContext: context, withPayload: productPayload)
                     }
-                    DatabaseManager.shared.saveContext()
-                    
+                    DatabaseManager.shared.saveContext(context: context)
                     DispatchQueue.main.async {
                         self?.refreshUI()
                     }
@@ -73,8 +72,24 @@ class ProductListViewController: UIViewController {
      */
     @IBAction func addToCartTap(_ sender: UIButton) {
         let product = allProducts[sender.tag]
+        if product.isAddedToCart {
+           showPopup(isAddedSuccessfully: false)
+            return
+        }
         product.updateAddToCart(withValue: true)
-        DatabaseManager.shared.saveContext()
+        showPopup(isAddedSuccessfully: true)
+    }
+    
+    
+    /// Use below method to success or error popup.
+    ///
+    /// - Parameter isAddedSuccessfully: boolean to indicate success or failure.
+    private func showPopup(isAddedSuccessfully: Bool) {
+        var message = "Product added to Cart."
+        if !isAddedSuccessfully {
+            message = "Product already present in Cart."
+        }
+        self.showAlert(title: "MyShoppingApp", message: message, completion: nil)
     }
 }
 

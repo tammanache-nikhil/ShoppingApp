@@ -27,6 +27,7 @@
 		1B32216A1FAFBE1D003C3FFA /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3221691FAFBE1D003C3FFA /* UIView+Helper.swift */; };
 		1B32216C1FAFBE4E003C3FFA /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32216B1FAFBE4E003C3FFA /* CartTableViewCell.swift */; };
 		1B32216E1FAFBE64003C3FFA /* MyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32216D1FAFBE64003C3FFA /* MyCartViewController.swift */; };
+		1BD335DD1FB04E9100A8DD3A /* UIViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD335DC1FB04E9100A8DD3A /* UIViewController+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		1B3221691FAFBE1D003C3FFA /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		1B32216B1FAFBE4E003C3FFA /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		1B32216D1FAFBE64003C3FFA /* MyCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartViewController.swift; sourceTree = "<group>"; };
+		1BD335DC1FB04E9100A8DD3A /* UIViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				1B32214C1FAF3EB7003C3FFA /* CustomError.swift */,
 				1B3221581FAF3ED2003C3FFA /* NSObject+Helper.swift */,
 				1B3221691FAFBE1D003C3FFA /* UIView+Helper.swift */,
+				1BD335DC1FB04E9100A8DD3A /* UIViewController+Helper.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				1B3221601FAF3ED3003C3FFA /* NSObject+Helper.swift in Sources */,
 				1B32216A1FAFBE1D003C3FFA /* UIView+Helper.swift in Sources */,
 				1B32215E1FAF3ED3003C3FFA /* URLRequestManager.swift in Sources */,
+				1BD335DD1FB04E9100A8DD3A /* UIViewController+Helper.swift in Sources */,
 				1B32215C1FAF3ED3003C3FFA /* ProductCollectionViewCell.swift in Sources */,
 				1B3221681FAFBD2B003C3FFA /* LazyImage.swift in Sources */,
 				1B3221371FAE6619003C3FFA /* AppDelegate.swift in Sources */,

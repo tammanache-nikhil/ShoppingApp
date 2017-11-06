@@ -62,10 +62,17 @@ class MyCartViewController: UIViewController {
     @IBAction func removeCartTap(_ sender: UIButton) {
         let product = myCartProducts[sender.tag]
         product.updateAddToCart(withValue: false)
-        DatabaseManager.shared.saveContext()
         refreshView()
+        showPopup()
     }
     
+    /// Use below method to success or error popup.
+    ///
+    /// - Parameter isAddedSuccessfully: boolean to indicate success or failure.
+    private func showPopup() {
+        let message = "Product removed from Cart."
+        self.showAlert(title: "MyShoppingApp", message: message, completion: nil)
+    }
     
     /// Use below function to get total price of all products added in cart.
     private func totalPriceOfCart() {
